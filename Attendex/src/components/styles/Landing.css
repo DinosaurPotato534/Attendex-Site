@@ -4,3 +4,7 @@
    -webkit-user-drag: none;
    -webkit-user-select: none;
    -ms-user-select: none; }
+
+.image {
+   margin-top: 20px;
+}
