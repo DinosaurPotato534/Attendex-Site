@@ -1,10 +1,6 @@
-.content {
-   user-select: none;
-   -moz-user-select: none;
-   -webkit-user-drag: none;
-   -webkit-user-select: none;
-   -ms-user-select: none; }
-
 .image {
    margin-top: 20px;
+   -moz-user-select: none;
+   -webkit-user-select: none;
+   user-select: none;
 }
