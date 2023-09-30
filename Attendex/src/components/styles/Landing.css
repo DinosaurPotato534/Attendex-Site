@@ -2,3 +2,12 @@
    margin-top: 20px;
    pointer-events: none;
 }
+
+.text {
+   font-family: 'Roboto', sans-serif;
+   font-size: 90px;
+   font-style: normal;
+   font-weight: 700;
+   line-height: normal; 
+   color: white;
+}
