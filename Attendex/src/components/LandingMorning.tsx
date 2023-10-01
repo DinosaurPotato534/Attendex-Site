@@ -48,7 +48,7 @@ function LandingMorning() {
     <div className="container">
       <div className="row">
         <div className="text-center position-relative margintop">
-          <img src="/sunrise.png" className="img-fluid image" alt="Sunrise" />
+          <img src="/sunrise.png" className="img-fluid" alt="Sunrise" />
           <div className="glass"></div>
           <div className="overlay">
             <h1 className="text">Good Morning</h1>

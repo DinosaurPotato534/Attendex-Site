@@ -2,6 +2,7 @@
 
 body {
   background: #090909;
+  overflow-x: hidden;
 }
 
 .custom-container {
