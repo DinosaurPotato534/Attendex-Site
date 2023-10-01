@@ -1,13 +1,59 @@
 .image {
-   margin-top: 20px;
-   pointer-events: none;
+  pointer-events: none;
+  z-index: 1;
 }
 
 .text {
-   font-family: 'Roboto', sans-serif;
-   font-size: 90px;
-   font-style: normal;
-   font-weight: 700;
-   line-height: normal; 
-   color: white;
+  font-family: 'Roboto', sans-serif;
+  font-size: 8vw;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  color: white;
+  white-space: nowrap;
+}
+
+.glass {
+  position: absolute;
+  top: 0;
+  left: 1%;
+  width: 98%;
+  height: 100%;
+  border-radius: 25px;
+  background: linear-gradient(180deg, rgba(217, 217, 217, 0.25) 0%, rgba(217, 217, 217, 0.10) 100%);
+  backdrop-filter: blur(3px);
+  z-index: 2;
+}
+
+.margintop {
+  margin-top: 20px;
+}
+
+.subtext {
+  font-family: 'Roboto', sans-serif;
+  font-size: 3vw;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  color: white;
+  white-space: nowrap;
+}
+
+.quote {
+  color: #FFF;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1vw;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 3;
 }
