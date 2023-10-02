@@ -1,11 +1,13 @@
 import "./styles/Link.css";
 
 function Link() {
-  <div className="container">
-    <div className="widget">
-      <img src="/Schoology-Logo-WHITE"></img>
+  return (
+    <div className="container">
+      <div className="widget">
+        <img src="/Schoology-Logo-WHITE"></img>
+      </div>
     </div>
-  </div>;
+  );
 }
 
 export default Link;
