@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
-body {
+.main {
   background: #090909;
   overflow-x: hidden;
 }

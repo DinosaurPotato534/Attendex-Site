@@ -4,7 +4,7 @@ import PeriodTracker from "../Periodtracker";
 
 function MainSection() {
   return (
-    <div className="custom-container">
+    <div className="custom-container main">
       <LandingMorning />
       <PeriodTracker />
     </div>
