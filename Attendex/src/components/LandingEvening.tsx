@@ -6,7 +6,7 @@ interface ZenQuote {
   a: string;
 }
 
-function LandingMorning() {
+function LandingEvening() {
   const [quoteData, setQuoteData] = useState<ZenQuote | null>(null);
 
   useEffect(() => {
@@ -49,10 +49,10 @@ function LandingMorning() {
       <h1 className="text1 margintop">Attendex</h1>
       <div className="row">
         <div className="text-center position-relative margintop">
-          <img src="/sunrise.png" className="img-fluid" alt="Sunrise" />
+          <img src="/evening.png" className="img-fluid" alt="Evening" />
           <div className="glass"></div>
           <div className="overlay">
-            <h1 className="text">Good Morning</h1>
+            <h1 className="text">Good Evening</h1>
             <h1 className="subtext">{currentDate}</h1>
             {quoteData && (
               <p className="quote">
@@ -66,4 +66,4 @@ function LandingMorning() {
   );
 }
 
-export default LandingMorning;
+export default LandingEvening;
