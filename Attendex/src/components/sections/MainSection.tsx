@@ -2,6 +2,7 @@ import "../styles/MainSection.css";
 import LandingMorning from "../LandingMorning";
 import LandingAfternoon from "../LandingAfternoon";
 import LandingEvening from "../LandingEvening";
+import Attendance from "../Attendance";
 
 function MainSection() {
   const currentTime = new Date();
@@ -17,7 +18,15 @@ function MainSection() {
     landingComponent = <LandingEvening />;
   }
 
-  return <div className="custom-container">{landingComponent}</div>;
+  return (
+    <>
+      <div className="custom-container">
+        {landingComponent}
+
+        <Attendance />
+      </div>
+    </>
+  );
 }
 
 export default MainSection;
