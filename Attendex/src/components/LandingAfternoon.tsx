@@ -52,7 +52,6 @@ function LandingAfternoon() {
         <div className="text-center position-relative margintop">
           <img src="/afternoon.png" className="img-fluid" alt="Afternoon" />
           <div className="overlay">
-            <h1 className="text">Good Afternoon</h1>
             <h1 className="subtext">{currentDate}</h1>
             {quoteData && (
               <p className="quote">
