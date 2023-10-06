@@ -52,7 +52,6 @@ function LandingMorning() {
         <div className="text-center position-relative margintop">
           <img src="/sunrise.png" className="img-fluid" alt="Sunrise" />
           <div className="overlay">
-            <h1 className="text">Good Morning</h1>
             <h1 className="subtext">{currentDate}</h1>
             {quoteData && (
               <p className="quote">
