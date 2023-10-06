@@ -10,8 +10,7 @@ function LandingMorning() {
   const [quoteData, setQuoteData] = useState<ZenQuote | null>(null);
 
   useEffect(() => {
-    const apiUrl =
-      "https://cors-anywhere.herokuapp.com/https://zenquotes.io/api/random";
+    const apiUrl = "https://zenquotes.io/api/random";
 
     fetch(apiUrl)
       .then((response) => {

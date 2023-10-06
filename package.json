@@ -1,5 +1,7 @@
 {
   "dependencies": {
-    "bootstrap": "^5.3.2"
+    "@types/firebase": "^3.2.1",
+    "bootstrap": "^5.3.2",
+    "firebase": "^10.4.0"
   }
 }

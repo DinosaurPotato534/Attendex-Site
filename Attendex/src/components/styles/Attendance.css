@@ -1,18 +1,84 @@
 .text {
     color: #FFF;
-    font-size: 128px;
+    font-size: 6vw;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
     font-family: 'Roboto', sans-serif;
+    margin-top: 20px;
 }
 
 .widget {
-    width: 662px;
+    width: 90%;
     height: 214px;
     flex-shrink: 0;
     border-radius: 50px;
     border: 1px solid #000;
     background: #1D1D1D;
     box-shadow: 0px 4px 4px 5px rgba(0, 0, 0, 0.25);
+    text-align: center;
+    margin-top: 20px;
+}
+
+.name {
+    margin-top: 30px;
+    text-align: center;
+    color: #FFF;
+    font-family: 'Roboto', sans-serif;
+    font-size: 3vw;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.student-id {
+    color: #FFF;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.25vw;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-align: center;
+}
+
+.present {
+    color: #40BC3D;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.25vw;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-align: center;
+}
+
+.absent {
+    color: #BC3D3D;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.25vw;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-align: center;
+}
+
+.tardy {
+    color: #BCAF3D;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.25vw;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-align: center;
+}
+
+.footer {
+    color: #FFF;
+    font-family: 'Roboto', sans-serif;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-align: center;
+    margin-top: 20px;
+    padding-bottom: 20px;
 }
