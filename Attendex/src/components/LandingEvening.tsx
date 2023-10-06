@@ -10,7 +10,9 @@ function LandingEvening() {
   const [quoteData, setQuoteData] = useState<ZenQuote | null>(null);
 
   useEffect(() => {
-    const apiUrl = "https://zenquotes.io/api/random";
+    const apiUrl =
+      "https://corsproxy.io/?" +
+      encodeURIComponent("https://zenquotes.io/api/random");
 
     fetch(apiUrl)
       .then((response) => {
@@ -49,9 +51,8 @@ function LandingEvening() {
       <div className="row">
         <div className="text-center position-relative margintop">
           <img src="/evening.png" className="img-fluid" alt="Evening" />
-          <div className="glass"></div>
           <div className="overlay">
-            <h1 className="text">Good Evening</h1>
+            <h1 className="subtext1">Good Evening</h1>
             <h1 className="subtext">{currentDate}</h1>
             {quoteData && (
               <p className="quote">

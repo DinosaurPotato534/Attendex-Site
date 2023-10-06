@@ -10,7 +10,7 @@ function LandingAfternoon() {
   const [quoteData, setQuoteData] = useState<ZenQuote | null>(null);
 
   useEffect(() => {
-    const apiUrl = "https://zenquotes.io/api/random";
+     const apiUrl = 'https://corsproxy.io/?' + encodeURIComponent('https://zenquotes.io/api/random'); 
 
     fetch(apiUrl)
       .then((response) => {
@@ -26,6 +26,8 @@ function LandingAfternoon() {
         console.error("Error fetching Zen quote:", error);
       });
   }, []);
+
+
 
   const today = new Date();
   const dayNames = [
@@ -49,7 +51,6 @@ function LandingAfternoon() {
       <div className="row">
         <div className="text-center position-relative margintop">
           <img src="/afternoon.png" className="img-fluid" alt="Afternoon" />
-          <div className="glass"></div>
           <div className="overlay">
             <h1 className="text">Good Afternoon</h1>
             <h1 className="subtext">{currentDate}</h1>

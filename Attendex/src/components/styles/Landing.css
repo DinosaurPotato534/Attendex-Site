@@ -22,18 +22,6 @@
   line-height: normal;
 }
 
-.glass {
-  position: absolute;
-  top: 0;
-  left: 1%;
-  width: 98%;
-  height: 100%;
-  border-radius: 25px;
-  background: linear-gradient(180deg, rgba(217, 217, 217, 0.25) 0%, rgba(217, 217, 217, 0.10) 100%);
-  backdrop-filter: blur(3px);
-  z-index: 2;
-}
-
 .margintop {
   margin-top: 10px;
 }
@@ -41,6 +29,16 @@
 .subtext {
   font-family: 'Roboto', sans-serif;
   font-size: 3vw;
+  font-style: normal;
+  font-weight: bold;
+  line-height: normal;
+  color: white;
+  white-space: nowrap;
+}
+
+.subtext1 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 6vw;
   font-style: normal;
   font-weight: 700;
   line-height: normal;

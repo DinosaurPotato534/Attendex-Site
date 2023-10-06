@@ -2,9 +2,12 @@ import { useEffect, useState } from "react";
 import "./styles/Attendance.css";
 import { initializeApp } from "firebase/app";
 import { getFirestore, doc, getDoc } from "firebase/firestore";
+import ScrollReveal from "scrollreveal";
 
 const firebaseConfig = {
   //firebaseCONFIG
+
+
 };
 
 const app = initializeApp(firebaseConfig);
@@ -34,19 +37,31 @@ function Attendance() {
     fetchData();
   }, []);
 
+  useEffect(() => {
+    const sr = ScrollReveal({
+      origin: "bottom",
+      distance: "20px",
+      duration: 1000,
+      reset: true,
+    });
+
+    studentsData.forEach((_student: any, index: number) => {
+      const widgetRef = `widget${index}`;
+      const widget = document.getElementById(widgetRef);
+
+      if (widget) {
+        sr.reveal(widget);
+      }
+    });
+  }, [studentsData]);
+
   return (
     <>
       <div className="container">
-        <div className="row justify-content-center align-items-center">
-          <div className="col-12 text-center">
-            <h1 className="text">Attendance</h1>
-          </div>
-        </div>
-
         <div className="row">
           {studentsData.map((student: any, index: number) => (
             <div className="col-md-6" key={index}>
-              <div className="widget mx-auto">
+              <div className="widget mx-auto" id={`widget${index}`}>
                 <h1 className="name">{student[1]}</h1>
                 <p className="student-id">{student[0]}</p>
                 <p className={student[2].toLowerCase()}>

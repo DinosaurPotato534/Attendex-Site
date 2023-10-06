@@ -1,0 +1,39 @@
+.background {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: black;
+    overflow: hidden;
+    transition: opacity 1s ease; /* Adjust the duration and easing as needed */
+  }
+  
+  .centered-content {
+    position: relative;
+    text-align: center;
+  }
+  
+  .cover {
+    object-fit: cover;
+    width: 100vw;
+    height: 100vh;
+    transition: opacity 1s ease; /* Adjust the duration and easing as needed */
+  }
+  
+  .text {
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 200px;
+    font-weight: 700;
+    line-height: normal;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .fade-out {
+    opacity: 0;
+  }
+  
