@@ -6,8 +6,6 @@ import ScrollReveal from "scrollreveal";
 
 const firebaseConfig = {
   //firebaseCONFIG
-
-
 };
 
 const app = initializeApp(firebaseConfig);

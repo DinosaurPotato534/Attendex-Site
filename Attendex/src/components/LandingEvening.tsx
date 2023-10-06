@@ -1,34 +1,6 @@
-import { useState, useEffect } from "react";
 import "./styles/Landing.css";
 
-interface ZenQuote {
-  q: string;
-  a: string;
-}
-
 function LandingEvening() {
-  const [quoteData, setQuoteData] = useState<ZenQuote | null>(null);
-
-  useEffect(() => {
-    const apiUrl =
-      "https://corsproxy.io/?" +
-      encodeURIComponent("https://zenquotes.io/api/random");
-
-    fetch(apiUrl)
-      .then((response) => {
-        if (!response.ok) {
-          throw new Error("Network response was not ok");
-        }
-        return response.json();
-      })
-      .then((data: ZenQuote[]) => {
-        setQuoteData(data[0]);
-      })
-      .catch((error) => {
-        console.error("Error fetching Zen quote:", error);
-      });
-  }, []);
-
   const today = new Date();
   const dayNames = [
     "Sunday",
@@ -52,12 +24,8 @@ function LandingEvening() {
         <div className="text-center position-relative margintop">
           <img src="/evening.png" className="img-fluid" alt="Evening" />
           <div className="overlay">
+            <h1 className="subtext1">Good Evening</h1>
             <h1 className="subtext">{currentDate}</h1>
-            {quoteData && (
-              <p className="quote">
-                {quoteData.q} <br /> - {quoteData.a}
-              </p>
-            )}
           </div>
         </div>
       </div>

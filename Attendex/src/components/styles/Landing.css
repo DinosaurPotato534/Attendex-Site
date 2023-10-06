@@ -3,16 +3,6 @@
   z-index: 1;
 }
 
-.text {
-  font-family: 'Roboto', sans-serif;
-  font-size: 6vw;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-  color: white;
-  white-space: nowrap;
-}
-
 .text1 {
   font-family: 'Roboto', sans-serif;
   color: #FFF;
@@ -28,7 +18,7 @@
 
 .subtext {
   font-family: 'Roboto', sans-serif;
-  font-size: 3vw;
+  font-size: 5vw;
   font-style: normal;
   font-weight: bold;
   line-height: normal;
@@ -38,22 +28,12 @@
 
 .subtext1 {
   font-family: 'Roboto', sans-serif;
-  font-size: 6vw;
+  font-size: 3vw;
   font-style: normal;
-  font-weight: 700;
+  font-weight: bold;
   line-height: normal;
   color: white;
   white-space: nowrap;
-}
-
-.quote {
-  color: #FFF;
-  text-align: center;
-  font-family: 'Roboto', sans-serif;
-  font-size: 1vw;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
 }
 
 .overlay {
